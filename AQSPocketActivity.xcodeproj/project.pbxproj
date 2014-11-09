@@ -16,6 +16,8 @@
 		D42B19561A0FF61C00A64B1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42B19551A0FF61C00A64B1A /* Images.xcassets */; };
 		D42B19591A0FF61C00A64B1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D42B19571A0FF61C00A64B1A /* LaunchScreen.xib */; };
 		D42B19651A0FF61D00A64B1A /* AQSPocketActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B19641A0FF61D00A64B1A /* AQSPocketActivityTests.m */; };
+		D42B19711A0FF7D200A64B1A /* AQSPocketActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B19701A0FF7D200A64B1A /* AQSPocketActivity.m */; };
+		D42B19731A0FF7DD00A64B1A /* AQSPocketActivity.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D42B19721A0FF7DD00A64B1A /* AQSPocketActivity.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		D42B195E1A0FF61D00A64B1A /* AQSPocketActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AQSPocketActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42B19631A0FF61D00A64B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42B19641A0FF61D00A64B1A /* AQSPocketActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AQSPocketActivityTests.m; sourceTree = "<group>"; };
+		D42B196F1A0FF7D200A64B1A /* AQSPocketActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQSPocketActivity.h; sourceTree = "<group>"; };
+		D42B19701A0FF7D200A64B1A /* AQSPocketActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQSPocketActivity.m; sourceTree = "<group>"; };
+		D42B19721A0FF7DD00A64B1A /* AQSPocketActivity.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AQSPocketActivity.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +149,9 @@
 		D42B196E1A0FF72400A64B1A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D42B196F1A0FF7D200A64B1A /* AQSPocketActivity.h */,
+				D42B19701A0FF7D200A64B1A /* AQSPocketActivity.m */,
+				D42B19721A0FF7DD00A64B1A /* AQSPocketActivity.xcassets */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 			files = (
 				D42B19541A0FF61C00A64B1A /* Main.storyboard in Resources */,
 				D42B19591A0FF61C00A64B1A /* LaunchScreen.xib in Resources */,
+				D42B19731A0FF7DD00A64B1A /* AQSPocketActivity.xcassets in Resources */,
 				D42B19561A0FF61C00A64B1A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +337,7 @@
 			files = (
 				D42B19511A0FF61C00A64B1A /* ViewController.m in Sources */,
 				D42B194E1A0FF61C00A64B1A /* AppDelegate.m in Sources */,
+				D42B19711A0FF7D200A64B1A /* AQSPocketActivity.m in Sources */,
 				D42B194B1A0FF61C00A64B1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AQSPocketActivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -463,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AQSPocketActivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "AQSPocketActivity.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [AQSPocketActivity setupPocketWithConsumerKey:@"34344-b710d0e41fc2d4517d8ca2cf"];
+    
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    [AQSPocketActivity handleOpenURL:url];
+    
     return YES;
 }
 
