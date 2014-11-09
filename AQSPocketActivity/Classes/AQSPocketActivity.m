@@ -133,9 +133,9 @@ NSString *const kAQSPocketActivitySaveURLDidFinishNotificationFailedErrorsKey = 
 
 - (void)saveURLs:(NSArray /* NSURL */ *)URLs {
     __block NSInteger URLsLeft = URLs.count;
-    __block NSMutableArray *failedURLs = [NSMutableArray array];
-    __block NSMutableArray *errors = [NSMutableArray array];
-    __block NSMutableArray *succeedURLs = [NSMutableArray array];
+    __block NSMutableArray *failedURLs = [[NSMutableArray alloc] init];
+    __block NSMutableArray *errors = [[NSMutableArray alloc] init];
+    __block NSMutableArray *succeedURLs = [[NSMutableArray alloc] init];
     __weak typeof(self) weakSelf = self;
     
     for (NSURL *URL in URLs) {
@@ -149,8 +149,8 @@ NSString *const kAQSPocketActivitySaveURLDidFinishNotificationFailedErrorsKey = 
             URLsLeft -= 1;
             
             if (URLsLeft == 0) {
-                BOOL isFailed = (succeedURLs == 0); // It is failed if all of URLs are not saved.
-                [weakSelf activityDidFinish:isFailed withFailedURLs:failedURLs withSavedURLs:succeedURLs withErrors:errors];
+                BOOL isFailed = (failedURLs.count == URLs.count); // It is failed if all of URLs are not saved.
+                [weakSelf activityDidFinish:!isFailed withFailedURLs:failedURLs withSavedURLs:succeedURLs withErrors:errors];
             }
         }];
     }
