@@ -74,3 +74,9 @@ Related Projects
 ---
 
 - [AQSShareService](https://github.com/AquaSupport/AQSShareService) - UX-improved sharing feature in few line. 
+
+References
+---
+
+- Pocket/Pocket-ObjC-SDK : https://github.com/Pocket/Pocket-ObjC-SDK
+- Pocket: Developer API : http://getpocket.com/developer/apps/new
