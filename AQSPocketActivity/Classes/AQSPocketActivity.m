@@ -10,6 +10,13 @@
 
 #import <PocketAPI.h>
 
+NSString *const kAQSPocketActivitySaveURLDidFinishNotification = @"AQSPocketActivitySaveURLDidFinishNotification";
+
+NSString *const kAQSPocketActivitySaveURLDidFinishNotificationIsSuccessKey = @"AQSPocketActivitySaveURLDidFinishNotificationIsSuccess";
+NSString *const kAQSPocketActivitySaveURLDidFinishNotificationSavedURLsKey = @"AQSPocketActivitySaveURLDidFinishNotificationSavedURLs";
+NSString *const kAQSPocketActivitySaveURLDidFinishNotificationFailedURLsKey = @"AQSPocketActivitySaveURLDidFinishNotificationFailedURLs";
+NSString *const kAQSPocketActivitySaveURLDidFinishNotificationFailedErrorsKey = @"AQSPocketActivitySaveURLDidFinishNotificationFailedErrors";
+
 @interface AQSPocketActivity ()
 
 @property (nonatomic, strong) NSArray *activityItems;
